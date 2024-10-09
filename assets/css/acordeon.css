@@ -37,7 +37,7 @@
 .acordeon.open .trigger::after {
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("/assets/img/icons/arrow-close.svg");
+  background-image: url("../img/icons/arrow-close.svg");
 }
 
 .acordeon .trigger::after {
@@ -47,7 +47,7 @@
   height: 1.5rem;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("/assets/img/icons/arrow-open.svg");
+  background-image: url("../img/icons/arrow-open.svg");
 }
 
 .acordeon .content {
