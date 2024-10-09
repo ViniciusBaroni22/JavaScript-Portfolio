@@ -1,0 +1,102 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border: solid 2px rgb(204, 245, 23);
+  border-radius: 50%;
+}
+
+.header .title {
+  text-align: center;
+}
+
+.header .title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.information > p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.5rem;
+  font-size: 0.825rem;
+}
+
+.information > p::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("/assets/img/icons/job.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+
+.information a {
+  color: white;
+  text-decoration: none;
+}
+.information a:hover {
+  text-decoration: underline;
+  color: rgb(204, 245, 23);
+}
+
+.information .job::before {
+  background-image: url("/assets/img/icons/job2.svg");
+  width: 1rem;
+  height: 1rem;
+}
+
+.information .location::before {
+  background-image: url("/assets/img/icons/location2.svg");
+  width: 1rem;
+  height: 1rem;
+}
+
+.information .email::before {
+  background-image: url("/assets/img/icons/email2.svg");
+  width: 1rem;
+  height: 1rem;
+}
+
+.information .phone::before {
+  background-image: url("/assets/img/icons/phone2.svg");
+  width: 1rem;
+  height: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-areas:
+      "photo title"
+      "photo information";
+  }
+
+  .header .photo {
+    grid-area: photo;
+    margin: 0 auto;
+  }
+
+  .header .title {
+    grid-area: title;
+    text-align: start;
+  }
+
+  .header .information {
+    grid-area: information;
+  }
+}

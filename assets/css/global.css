@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  color: white;
+  background: rgb(2, 2, 104);
+  background: linear-gradient(
+    120deg,
+    rgb(2, 2, 2) 11%,
+    rgb(4, 8, 55) 52%,
+    rgba(13, 43, 216, 0.867) 74%
+  );
+}
+.main {
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    max-width: 1024px;
+    margin: 1rem auto;
+  }
+}
